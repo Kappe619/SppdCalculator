@@ -11,6 +11,8 @@
 		BBDDD3E82AC1BE5200C635E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDD3E72AC1BE5200C635E6 /* ContentView.swift */; };
 		BBDDD3EA2AC1BE5300C635E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDDD3E92AC1BE5300C635E6 /* Assets.xcassets */; };
 		BBDDD3ED2AC1BE5300C635E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDDD3EC2AC1BE5300C635E6 /* Preview Assets.xcassets */; };
+		BBDDD3F52AC1C16100C635E6 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDD3F42AC1C16100C635E6 /* CalculateView.swift */; };
+		BBDDD3F72AC1CA5100C635E6 /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDD3F62AC1CA5100C635E6 /* Rarity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		BBDDD3E92AC1BE5300C635E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBDDD3EC2AC1BE5300C635E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBDDD3EE2AC1BE5300C635E6 /* SppdCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SppdCalculator.entitlements; sourceTree = "<group>"; };
+		BBDDD3F42AC1C16100C635E6 /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
+		BBDDD3F62AC1CA5100C635E6 /* Rarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				BBDDD3E92AC1BE5300C635E6 /* Assets.xcassets */,
 				BBDDD3EE2AC1BE5300C635E6 /* SppdCalculator.entitlements */,
 				BBDDD3EB2AC1BE5300C635E6 /* Preview Content */,
+				BBDDD3F42AC1C16100C635E6 /* CalculateView.swift */,
+				BBDDD3F62AC1CA5100C635E6 /* Rarity.swift */,
 			);
 			path = SppdCalculator;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDDD3E82AC1BE5200C635E6 /* ContentView.swift in Sources */,
+				BBDDD3F52AC1C16100C635E6 /* CalculateView.swift in Sources */,
+				BBDDD3F72AC1CA5100C635E6 /* Rarity.swift in Sources */,
 				BBDDD3E62AC1BE5200C635E6 /* SppdCalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
