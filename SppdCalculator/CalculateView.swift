@@ -50,7 +50,7 @@ struct CalculateView: View {
 
                 .onChange(of: selectedRarity) { newValue in
                     self.costs = calcCosts() }
-            Text("costs: \(costs)")
+            Text("Kosten: \(costs)")
                 .font(.system(size: 15))
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
 

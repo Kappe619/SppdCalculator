@@ -11,7 +11,7 @@ import SwiftUI
 struct SppdCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(capsAvailableText: "")
         }
     }
 }

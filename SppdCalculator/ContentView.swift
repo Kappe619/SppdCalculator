@@ -23,16 +23,42 @@ struct ContentView: View {
     @State private var costs10: Int = 0
     @State private var costs11: Int = 0
     @State private var costs12: Int = 0
+    @State var capsAvailableText: String
+    @State var capsAvailable: Int = 0
+    @State var defaultFontSize: CGFloat = 15.0
     
     var totalCosts: Int{
         return costs1 + costs2 + costs3 + costs4 + costs5 + costs6 + costs7 + costs8 + costs9 + costs10 + costs11 + costs12
     }
     
+    var buffer: Int{
+        return capsAvailable - totalCosts
+    }
+    
     var body: some View {
         
-
-            VStack {
-                
+        VStack {
+            
+            HStack{
+                Text("Kk verfügbar:")
+                    .font(.system(size: defaultFontSize))
+                TextEditor(text: $capsAvailableText)
+                    .font(.system(size: defaultFontSize))
+                    .frame(width: 70)
+                    .scrollDisabled(true)
+                    .onChange(of: capsAvailableText) { newValue in
+                        if let intValue = Int(newValue) {
+                            capsAvailable = intValue
+                        } else {
+                            capsAvailable = 0
+                        }
+                    }
+                Text("\t Gesamtkosten: \(totalCosts) \t")
+                    .font(.system(size: defaultFontSize))
+                Text("Puffer: \(buffer)")
+                    .font(.system(size: defaultFontSize))
+                    .foregroundColor(buffer < 0 ? .red : .primary)
+            }
                 
                 HStack{
                     
@@ -66,9 +92,9 @@ struct ContentView: View {
             }
             .padding()
         }
-    }
-
-
-#Preview {
-    ContentView()
+    
 }
+
+//#Preview {
+//    //ContentView()
+//}
